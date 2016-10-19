@@ -3,19 +3,22 @@
  *
  * @author Francisco Casasola Cano
  */
-import java.util.Scanner;
 public class Ejercicio13 {
   public static void main(String[] args) {
     
-    Scanner s = new Scanner(System.in);
-    
     int a,b,c;
     
-    System.out.print("Introduzca tres números enteros separados por un espacio: ");
+    System.out.print("Introduzca un número entero: ");
     
-    a = s.nextInt();
-    b = s.nextInt();
-    c = s.nextInt();
+    a = Integer.parseInt(System.console().readLine());
+    
+    System.out.print("Introduzca otro número entero: ");
+    
+    b = Integer.parseInt(System.console().readLine());
+    
+    System.out.print("Introduzca el ultimo número entero: ");
+    
+    c = Integer.parseInt(System.console().readLine());
     
     if ( a > b ) {
       

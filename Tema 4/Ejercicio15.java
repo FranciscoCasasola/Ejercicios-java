@@ -4,15 +4,14 @@
  * @author Francisco Casasola Cano
  */
  
-import java.util.Scanner;
+
 
 public class Ejercicio15 {
   public static void main(String[] args) {
+  
     
-    Scanner s = new Scanner(System.in);
     
-    
-    char b = 'c';
+    String b;
     int a;
     System.out.println("Introduzca un número para elegir hacia donde quiere que mire el vertice de la piramide ");
     System.out.println("1. Mira hacia arriba ");
@@ -22,9 +21,10 @@ public class Ejercicio15 {
     
     a = Integer.parseInt(System.console().readLine());
     
+    
     System.out.print("Introduzca un caracter, puede ser número, letra, o simbolo: ");
     
-    b = s.next().charAt(0);
+    b = System.console().readLine();
     
     
     switch (a) {

@@ -3,22 +3,26 @@
  *
  * @author Francisco Casasola Cano
  */
-import java.util.Scanner;
  
 public class Ejercicio8 {
   public static void main(String[] args) {
-    
-    Scanner s = new Scanner(System.in);
     
     double a,b,c;
     double resultado;
     String notaFinal = "Suficiente";
     
-    System.out.print("Introduzca tres notas a continuación: ");
+    System.out.print("Introduzca la primera nota: ");
     
-    a = s.nextDouble();
-    b = s.nextDouble();
-    c = s.nextDouble();
+    a = Double.parseDouble(System.console().readLine());
+    
+    System.out.print("Introduzca la segunda nota");
+    
+    b = Double.parseDouble(System.console().readLine());
+    
+    System.out.print("Introduzca la tercera nota");
+    
+    c = Double.parseDouble(System.console().readLine());
+
     
     resultado = ((a+b+c)/3);
     

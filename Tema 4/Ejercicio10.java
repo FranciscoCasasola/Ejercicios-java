@@ -4,19 +4,20 @@
  *
  * @author Francisco Casasola Cano
  */
-import java.util.Scanner;
 
 public class Ejercicio10 {
   public static void main(String[] args) {
     
-    Scanner s = new Scanner(System.in);
-    
     int dia,mes;
     
-    System.out.print("Introduce el dia y el mes de tu nacimiento: ");
+    System.out.print("Introduce el mes de tu nacimiento: ");
     
-    dia = s.nextInt();
-    mes = s.nextInt();
+    mes = Integer.parseInt(System.console().readLine());
+    
+    System.out.print("Introduce el dia de tu nacimiento: ");
+    
+    dia = Integer.parseInt(System.console().readLine());
+    
     
     if ( mes > 13 || dia > 31 ) {
       

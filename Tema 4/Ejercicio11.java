@@ -3,12 +3,10 @@
  *
  * @author Francisco Casasola Cano
  */
-import java.util.Scanner;
 
 public class Ejercicio11 {
   public static void main(String[] args) {
     
-    Scanner s = new Scanner(System.in);
     
     int hora, min;
     int medianoche;
@@ -16,10 +14,13 @@ public class Ejercicio11 {
     
     medianoche = 86400;
     
-    System.out.println("Introduce la hora y minutos del dia en el que estas: ");
+    System.out.print("Introduce la hora dia en la que estas: ");
     
-    hora = s.nextInt();
-    min = s.nextInt();
+    hora = Integer.parseInt(System.console().readLine());
+    
+    System.out.print("Introduce los minutos: ");
+    
+    min = Integer.parseInt(System.console().readLine());
     
     hora = (hora*3600);
     min = (min*60);
