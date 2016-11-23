@@ -1,33 +1,33 @@
-/** Ejercicio 8 Tema 6
+/** Ejercicio 7 Tema 6
  *
  *
  * @author Francisco Casasola Cano
  */
  
-public class Ejercicio8 {
+public class Ejercicio07 {
   public static void main(String[] args) {
   
+    
     int num,fila;
     fila = 0;
     
+    
+    
       while (fila < 15) {
+        
         
         for (int i = 3; i > 0; i--) {
           
-          num = (int)((Math.random()*6) + 1);
+           num = (int)((Math.random()*3) + 1);
           
-          if (num == 1 || num == 2 || num == 3) {
-            
-            System.out.printf("%3s", "1");
-          
-          } else if (num == 4 || num == 5) {
+          if (num == 3) {
             
             System.out.printf("%3s", "x");
           
           
         } else {
           
-           System.out.printf("%3s", "2");
+           System.out.printf("%3d", num);
            
          }
          
@@ -39,3 +39,11 @@ public class Ejercicio8 {
      }
    }
  }
+         
+         
+      
+          
+        
+        
+        
+      

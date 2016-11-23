@@ -4,7 +4,7 @@
  * @author Francisco Casasola Cano
  */
  
-public class Ejercicio2 {
+public class Ejercicio01 {
   public static void main(String[] args) { 
   
     int temp,temp2;
